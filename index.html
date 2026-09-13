@@ -7,28 +7,29 @@
 
     <title>Meu Belo Horizonte</title>
 
-    <link rel="stylesheet" href="/assets/css/estilo.css">
+    <!-- Bootstrap CSS -->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
     >
 
+    <!-- CSS próprio do projeto -->
+    <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 
 <body>
+<!-- CABEÇALHO -->
+<header class="bg-dark">
 
-    <!-- CABEÇALHO -->
-    <header class="bg-dark text-white">
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container">
-            
-            <a href="#">Logo do site aqui</a>
-            <a class="navbar-brand" href="#inicio">
+    <nav class="navbar navbar-expand-md navbar-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#inicio">
                 Meu Belo Horizonte
             </a>
-        </div>
 
-        <!-- MENU-CABEÇALHO -->
+            <!-- BOTÃO DO MENU MOBILE -->
             <button
                 class="navbar-toggler"
                 type="button"
@@ -41,43 +42,56 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- MENU -->
             <div class="collapse navbar-collapse" id="menuPrincipal">
+
                 <div class="navbar-nav ms-auto">
+
                     <a class="nav-link" href="#inicio">
                         Início
                     </a>
+
                     <a class="nav-link" href="#sobre">
                         Sobre
                     </a>
+
                     <a class="nav-link" href="#conteudo">
                         Conteúdo
                     </a>
+
                     <a class="nav-link" href="#contato">
                         Contato
                     </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </nav>
 
-    </header>
+</header>
 
 
-    <!-- CONTEÚDO PRINCIPAL -->
-        <main ID=""INICIO" class="container my-4">
-            <div class="row g-4">
+<!-- CONTEÚDO PRINCIPAL -->
+<main id="inicio" class="container my-4">
+
+    <div class="row g-4">
 
         <!-- MENU LATERAL -->
         <aside class="col-12 col-md-3">
 
             <!-- FORMULÁRIO DE REGISTRO -->
             <div class="card mb-4">
+
                 <div class="card-body">
 
-                <h2 class="h5 card-title">
-                    Registro
-                </label>
-<form>
+                    <h2 class="h5 card-title">
+                        Registro
+                    </h2>
+
+                    <form>
 
                         <div class="mb-3">
 
@@ -155,7 +169,7 @@
             </div>
 
 
-            <!-- TEXTOS -->
+            <!-- INFORMAÇÕES -->
             <div class="card">
 
                 <div class="card-body">
@@ -179,36 +193,41 @@
 
 
         <!-- ÁREA PRINCIPAL -->
-        <div class="col-12 col-md-9">
+        <section class="col-12 col-md-9">
 
             <!-- PESQUISA -->
             <section class="mb-4">
 
                 <form>
 
-                    <label
-                        for="pesquisa"
-                        class="form-label"
-                    >
+                    <label for="pesquisa" class="form-label">
                         Pesquise aqui sua notícia
                     </label>
 
-                    <div class="input-group">
+                    <div class="row g-2">
 
-                        <input
-                            type="text"
-                            id="pesquisa"
-                            name="pesquisa"
-                            class="form-control"
-                            placeholder="Use palavras-chave"
-                        >
+                        <div class="col-12 col-md">
 
-                        <button
-                            type="submit"
-                            class="btn btn-primary"
-                        >
-                            Pesquisar
-                        </button>
+                            <input
+                                type="text"
+                                id="pesquisa"
+                                name="pesquisa"
+                                class="form-control"
+                                placeholder="Use palavras-chave"
+                            >
+
+                        </div>
+
+                        <div class="col-12 col-md-auto">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary w-100"
+                            >
+                                Pesquisar
+                            </button>
+
+                        </div>
 
                     </div>
 
@@ -252,7 +271,7 @@
 
                     <img
                         src="https://fastly.picsum.photos/id/88/1280/1707.jpg?hmac=NnkwPVDBTVxHkc4rALB_fyu-OHY2usdm7iRk5El7JC4"
-                        class="card-img-top"
+                        class="card-img-top img-fluid"
                         alt="Imagem do artigo principal"
                     >
 
@@ -281,22 +300,16 @@
                     Conheça outras notícias
                 </h2>
 
-                <!--
-                    Bootstrap:
-                    col-12 = uma coluna no celular
-                    col-md-4 = três colunas a partir do breakpoint md
-                -->
                 <div class="row g-4">
 
-
                     <!-- CARD 1 -->
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
 
                         <article class="card h-100">
 
                             <img
                                 src="https://fastly.picsum.photos/id/38/1280/960.jpg?hmac=HBrgyJHQOGVicaWoXgvdSfTakkAyv4BxAt4rF0DhWkU"
-                                class="card-img-top"
+                                class="card-img-top img-fluid"
                                 alt="Imagem sobre o tempo"
                             >
 
@@ -322,13 +335,13 @@
 
 
                     <!-- CARD 2 -->
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
 
                         <article class="card h-100">
 
                             <img
                                 src="https://picsum.photos/id/237/200/300"
-                                class="card-img-top"
+                                class="card-img-top img-fluid"
                                 alt="Imagem sobre animais"
                             >
 
@@ -354,13 +367,13 @@
 
 
                     <!-- CARD 3 -->
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
 
                         <article class="card h-100">
 
                             <img
                                 src="https://fastly.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ"
-                                class="card-img-top"
+                                class="card-img-top img-fluid"
                                 alt="Imagem sobre lugares"
                             >
 
@@ -386,13 +399,13 @@
 
 
                     <!-- CARD 4 -->
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
 
                         <article class="card h-100">
 
                             <img
                                 src="https://fastly.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so"
-                                class="card-img-top"
+                                class="card-img-top img-fluid"
                                 alt="Imagem sobre trabalho"
                             >
 
@@ -418,13 +431,13 @@
 
 
                     <!-- CARD 5 -->
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
 
                         <article class="card h-100">
 
                             <img
                                 src="https://fastly.picsum.photos/id/63/5000/2813.jpg?hmac=HvaeSK6WT-G9bYF_CyB2m1ARQirL8UMnygdU9W6PDvM"
-                                class="card-img-top"
+                                class="card-img-top img-fluid"
                                 alt="Café e poesias"
                             >
 
@@ -450,13 +463,13 @@
 
 
                     <!-- CARD 6 -->
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
 
                         <article class="card h-100">
 
                             <img
                                 src="https://fastly.picsum.photos/id/70/3011/2000.jpg?hmac=-npCfe1kpGYW7HcBlZvrEZ9Qb_EdiGLbDxE26amgotM"
-                                class="card-img-top"
+                                class="card-img-top img-fluid"
                                 alt="Imagem sobre passeios"
                             >
 
@@ -484,7 +497,7 @@
 
             </section>
 
-        </div>
+        </section>
 
     </div>
 
@@ -503,26 +516,17 @@
             Conheça minhas redes
         </h2>
 
-        <div class="d-flex justify-content-center gap-3 my-3">
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 my-3">
 
-            <a
-                href="#instagram"
-                class="text-white"
-            >
+            <a href="#instagram" class="text-white">
                 Instagram
             </a>
 
-            <a
-                href="#facebook"
-                class="text-white"
-            >
+            <a href="#facebook" class="text-white">
                 Facebook
             </a>
 
-            <a
-                href="#youtube"
-                class="text-white"
-            >
+            <a href="#youtube" class="text-white">
                 YouTube
             </a>
 
@@ -537,7 +541,11 @@
 </footer>
 
 
-<!-- JavaScript do Bootstrap -->
+<!-- Bootstrap JavaScript -->
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
 </script>
+
+</body>
+
+</html>

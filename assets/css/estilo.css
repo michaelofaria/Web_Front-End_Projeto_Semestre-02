@@ -1,29 +1,24 @@
-@import url("cabecalho.css");
-@import url("corpo.css");
-@import url("menu.css");
-@import url("rodape.css");
-@import url("media.css");
-
-
-/* CONFIGURAÇÕES GERAIS */
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #222222;
 }
 
-/* CONTEÚDO PRINCIPAL */
 
-.conteudo {
-    display: flex;
+/* IMAGENS */
+
+.card-img-top {
     width: 100%;
-    min-height: 700px;
-    padding: 15px;
+    height: auto;
+}
+
+
+/* LINKS DO RODAPÉ */
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
