@@ -1,24 +1,95 @@
+/* CONFIGURAÇÕES GERAIS */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #222222;
+font-family: Arial, sans-serif;
+background-color: #F7F3ED;
+color: #3E3833;
 }
 
+/* CABEÇALHO */
 
-/* IMAGENS */
+header.bg-dark {
+background-color: #355C5A !important;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+color: #FFFDF9;
+}
+
+.navbar-dark .nav-link:hover {
+color: #E6D3B1;
+}
+
+/* BOTÕES PRINCIPAIS */
+
+.btn-primary {
+    background-color: #5B7C82;
+    border-color: #5B7C82;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #486970;
+    border-color: #486970;
+}
+
+/* BOTÕES DO MENU LATERAL */
+
+.btn-outline-primary {
+    color: #5B7C82;
+    border-color: #8FAEB2;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: #8FAEB2;
+    border-color: #8FAEB2;
+    color: #294846;
+}
+
+/* CARDS */
+
+.card {
+background-color: #FFFDF9;
+border-color: #E5DDD2;
+}
+
+/* TEXTOS SECUNDÁRIOS */
+
+.text-muted {
+color: #756B63 !important;
+}
+
+/* TÍTULOS */
+
+h1,
+h2,
+h3 {
+color: #3E3833;
+}
+
+/* IMAGENS DOS CARDS */
 
 .card-img-top {
-    width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
 }
 
+/* RODAPÉ */
 
-/* LINKS DO RODAPÉ */
+footer.bg-dark {
+background-color: #294846 !important;
+}
 
 footer a {
-    text-decoration: none;
+color: #FFFDF9 !important;
+text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+color: #E6D3B1 !important;
+text-decoration: underline;
 }
